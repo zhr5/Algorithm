@@ -22,7 +22,13 @@ public class TwoSum {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-        
+        A
+        Set<Integer> st=new HashSet<>();
+        for(int i=0;i<nums.length;i++){
+            if(!st.containsKey(target-nums[i])){
+
+            }
+        }
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
