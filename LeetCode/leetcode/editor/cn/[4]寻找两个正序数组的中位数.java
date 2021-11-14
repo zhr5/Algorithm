@@ -64,7 +64,33 @@ public class MedianOfTwoSortedArrays {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        
+        int m=nums1.length,n=nums2.length;
+        if(m==0){
+            if(n%2==0){
+                return (nums2[n/2-1]+nums2[n/2])/2.0;
+            }else{
+                return nums2[n/2];
+            }
+        }
+        if(n==0){
+            if(m%2==0){
+                return (nums1[m/2-1]+nums1[m/2])/2.0;
+            }else{
+                return nums1[m/2];
+            }
+        }
+
+        int i=0,j=0;
+        if((m+n)%2==0){
+            while((i+j)!=(m+n)/2-1){
+
+            }
+
+            return (nums[(m+n)/2-1]+nums[(m+n)/2])/2.0;
+        }
+        else{
+            return nums[(m+n)/2];
+        }
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
